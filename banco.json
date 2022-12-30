@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "nome": "Evandro",
+      "mensagem": "blog de exemplo"
+    },
+    {
+      "id": 2,
+      "nome": "Daiane",
+      "mensagem": "blog de Daiane"
+    },
+    {
+      "id": 3,
+      "nome": "Lucas",
+      "mensagem": "blog de Lucas"
+    },
+    {
+      "id": 4,
+      "nome": "Jão",
+      "mensagem": "blog de Jão"
+    }
+  ]
+}
