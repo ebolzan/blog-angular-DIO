@@ -35,5 +35,23 @@ export class FeedComponent implements OnInit{
     })
   }
 
+  ver(value:string)
+  {
+     this.postService.getPostsByNome(value).subscribe((data:Post[])=>{
+
+      let dado: Post[];
+
+      if(data.length == 0)
+      {
+        dado = [{"id":201, "nome":"Não encontrado", "mensagem":"Nenhum post encontrado"}]
+        this.listPost = dado;
+      }
+      else
+        this.listPost = data;
+      
+     // location.assign('/feed')
+     });
+  }
+
 
 }

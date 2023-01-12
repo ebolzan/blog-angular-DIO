@@ -21,4 +21,10 @@ export class PostService {
   {
     return this.http.post('http://localhost:3000/posts', post)
   }
+
+  getPostsByNome(query:string)
+  {
+    const url = 'http://localhost:3000/posts?nome='+ query;
+    return this.http.get<Post[]>(url)
+  }
 }
