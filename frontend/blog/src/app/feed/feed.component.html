@@ -12,8 +12,8 @@
                   <a href="https://github.com/ebolzan" target="_blank" class="btn btn-outline-dark d-flex justify-content-center">Github</a>
                   <hr class="mt-4 md-4">
                   <h6 class="mb-3 text-monospace text-center">Pesquisar por titulo</h6>
-                  <input type="text" class="form-control mb-3 w-100">
-                  <input class="btn btn-outline-warning w-100" value="Pesquisar">
+                  <input type="text" name="pesquisar" class="form-control mb-3 w-100" #pesquisar>
+                  <input class="btn btn-outline-warning w-100" (click)="ver(pesquisar.value)" value="Pesquisar">
                 </div>
               </div>
         </div>
